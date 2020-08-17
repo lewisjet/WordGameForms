@@ -88,7 +88,7 @@ namespace WordGameLibrary
             {
                 foreach (string word in dictionary)
                 {
-                    if (word == inputch && !wordsEntered.Contains(inputch)) { isValidWord = true; }
+                    if (word == inputch && !wordsEntered.Contains(inputch)) { isValidWord = true; break; }
                 }
             }
 
