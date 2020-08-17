@@ -5,6 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>My Scrabble like Word-Game!</Description>
     <Copyright>Public Domain</Copyright>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
 </Project>
