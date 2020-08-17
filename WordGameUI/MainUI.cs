@@ -17,7 +17,8 @@ namespace WordGameUI
         {
             InitializeComponent();
             string numtxt = string.Empty;
-            new RandomChars(out List<char> currentChars, 2, 5);
+            Random random = new Random();
+            new RandomChars(out List<char> currentChars, 2, 5,random);
             foreach(char i in currentChars) { numtxt += i.ToString(); }
             Nums.Text = numtxt;
         }
