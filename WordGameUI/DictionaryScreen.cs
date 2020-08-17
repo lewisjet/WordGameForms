@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WordGameLibrary;
 using System.Net;
 using System.IO;
+using System.Media;
 
 namespace WordGameUI
 {
@@ -18,7 +19,6 @@ namespace WordGameUI
         public DictionaryScreen()
         {
             InitializeComponent();
-          
         }
 
         private void Def_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace WordGameUI
             }
             catch
             {
-
+                
             }
             try
             {
@@ -38,7 +38,9 @@ namespace WordGameUI
             }
             catch
             {
-                throw new NullReferenceException();
+                SystemSounds.Hand.Play();
+                MessageBox.Show("Sorry, an error occured. Please check your internet connection and try again. You only have to download the dictionary once!");
+                return;
             }
             Complete();
         }

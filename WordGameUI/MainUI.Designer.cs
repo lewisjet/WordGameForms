@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.Nums = new System.Windows.Forms.Label();
             this.RulesBox = new System.Windows.Forms.GroupBox();
+            this.HighScore = new System.Windows.Forms.Label();
             this.Rules = new System.Windows.Forms.Label();
             this.UserInput = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.MainArea = new System.Windows.Forms.Panel();
-            this.HighScore = new System.Windows.Forms.Label();
             this.Score = new System.Windows.Forms.Label();
             this.RulesBox.SuspendLayout();
             this.MainArea.SuspendLayout();
@@ -63,6 +63,16 @@
             this.RulesBox.TabStop = false;
             this.RulesBox.Text = "Rules";
             // 
+            // HighScore
+            // 
+            this.HighScore.AutoSize = true;
+            this.HighScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighScore.Location = new System.Drawing.Point(6, 417);
+            this.HighScore.Name = "HighScore";
+            this.HighScore.Size = new System.Drawing.Size(164, 25);
+            this.HighScore.TabIndex = 4;
+            this.HighScore.Text = "High Score: null";
+            // 
             // Rules
             // 
             this.Rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,6 +99,7 @@
             this.SubmitButton.TabIndex = 3;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // MainArea
             // 
@@ -100,16 +111,6 @@
             this.MainArea.Name = "MainArea";
             this.MainArea.Size = new System.Drawing.Size(550, 464);
             this.MainArea.TabIndex = 4;
-            // 
-            // HighScore
-            // 
-            this.HighScore.AutoSize = true;
-            this.HighScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HighScore.Location = new System.Drawing.Point(6, 417);
-            this.HighScore.Name = "HighScore";
-            this.HighScore.Size = new System.Drawing.Size(164, 25);
-            this.HighScore.TabIndex = 4;
-            this.HighScore.Text = "High Score: null";
             // 
             // Score
             // 
