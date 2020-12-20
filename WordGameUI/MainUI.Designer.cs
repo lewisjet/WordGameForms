@@ -37,6 +37,7 @@
             this.SubmitButton = new System.Windows.Forms.Button();
             this.MainArea = new System.Windows.Forms.Panel();
             this.Score = new System.Windows.Forms.Label();
+            this.ResetBut = new System.Windows.Forms.Button();
             this.RulesBox.SuspendLayout();
             this.MainArea.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +104,7 @@
             // 
             // MainArea
             // 
+            this.MainArea.Controls.Add(this.ResetBut);
             this.MainArea.Controls.Add(this.Score);
             this.MainArea.Controls.Add(this.SubmitButton);
             this.MainArea.Controls.Add(this.UserInput);
@@ -121,6 +123,17 @@
             this.Score.TabIndex = 4;
             this.Score.Text = "0";
             this.Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ResetBut
+            // 
+            this.ResetBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetBut.Location = new System.Drawing.Point(428, 408);
+            this.ResetBut.Name = "ResetBut";
+            this.ResetBut.Size = new System.Drawing.Size(119, 53);
+            this.ResetBut.TabIndex = 5;
+            this.ResetBut.Text = "Reset";
+            this.ResetBut.UseVisualStyleBackColor = true;
+            this.ResetBut.Click += new System.EventHandler(this.ResetBut_Click);
             // 
             // MainUI
             // 
@@ -150,6 +163,7 @@
         private System.Windows.Forms.Panel MainArea;
         private System.Windows.Forms.Label HighScore;
         private System.Windows.Forms.Label Score;
+        private System.Windows.Forms.Button ResetBut;
     }
 }
 

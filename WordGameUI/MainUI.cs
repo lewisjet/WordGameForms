@@ -50,6 +50,7 @@ namespace WordGameUI
         {
             
             mainGame.CalculationsOnly(UserInput.Text, Globals.entireDictionary);
+            UserInput.Text = string.Empty;
             UpdateScore();
         }
 
@@ -75,6 +76,12 @@ namespace WordGameUI
 
             mainGame = new MainGame(currentChars);
             UpdateScore();
+        }
+
+        private void ResetBut_Click(object sender, EventArgs e)
+        {
+            UserInput.Text = string.Empty;
+            Ctor();
         }
     }
 }
